@@ -22,7 +22,6 @@
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       * {
         margin: 0;
@@ -41,9 +40,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3rem 5rem 0 5rem;
-        /* padding: 3rem 3rem 0 3rem; */
-        /* overflow: hidden; */
+        padding: 2rem 5rem 0 5rem;
+      }
+
+      header {
+        width: 100%;
+      }
+
+      header div {
+        text-align: left;
       }
 
       main > div {
@@ -53,8 +58,7 @@
       }
 
       section {
-        width: 35%;
-        margin-left: 3%;
+        padding: 0 12rem 0 4rem;
       }
       section h1 {
         font-size: 2.3rem;
@@ -70,17 +74,21 @@
         border: none;
         border-radius: 20px;
         padding: 10px 40px;
+        color: hsl(257, 40%, 49%);
+        font-weight: 600;
       }
 
       section button:hover {
         cursor: pointer;
       }
       footer {
-        text-align: right;
+        /* text-align: right;*/
         padding-right: 10rem;
         display: flex;
         justify-content: flex-end;
         margin-top: -40px;
+        /* background-color: yellow; */
+        width: 100%;
       }
 
       footer div {
@@ -95,29 +103,53 @@
       }
 
       @media screen and (max-width: 767px) {
+        body {
+          height: 100%;
+        }
+
+        header {
+          width: 100vw;
+          overflow: hidden;
+        }
+        header img {
+          width: 50%;
+        }
         main > div {
           display: flex;
           flex-direction: column;
         }
 
         main img {
-          width: 400px;
+          width: 320px;
         }
 
         section {
           width: 100%;
           margin-left: 0%;
           text-align: center;
+
+          padding: 0 0.2rem;
         }
+        section button {
+          width: 60%;
+        }
+        /* section {
+        padding: 0 12rem 0 4rem;
+      } */
+        section h1 {
+          font-size: 2rem;
+        }
+
+        /* section p {
+          width: 100%;
+      
+        } */
 
         footer {
           margin-top: 30px;
           padding-right: 0;
           justify-content: center;
           padding-bottom: 5rem;
-        }
-        section button {
-          width: 60%;
         }
       }
     </style>
